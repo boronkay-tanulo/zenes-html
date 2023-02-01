@@ -11,7 +11,7 @@ function Init()
 		8: new Audio("for KING & COUNTRY - Little Drummer Boy.mp3")
 	}
 	console.log("hello");
-	for (let i /*= 0; i <= 8; i == 3 ? i+=2 : i++*/ in audios)
+	for (let i in audios)
 	{
 		document.getElementById(`d${i}`).onclick = function() {
 			for(let n in audios) {

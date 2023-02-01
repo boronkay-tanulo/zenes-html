@@ -10,7 +10,6 @@ function Init()
 		7: new Audio("Fatboy Slim - Ya Mama.mp3"),
 		8: new Audio("for KING & COUNTRY - Little Drummer Boy.mp3")
 	}
-	console.log("hello");
 	for (let i in audios)
 	{
 		document.getElementById(`d${i}`).onclick = function() {
@@ -20,7 +19,6 @@ function Init()
 			audios[i].play();
 		}
 	}
-	document.onclick = function() {console.log(audios[0].paused);}
 }
 
 Init();
